@@ -1,0 +1,107 @@
+
+\documentclass{article}
+
+% If you're new to LaTeX, here's some short tutorials:
+% https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes
+% https://en.wikibooks.org/wiki/LaTeX/Basics
+
+% Formatting
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[titletoc,title]{appendix}
+
+% Math
+% https://www.overleaf.com/learn/latex/Mathematical_expressions
+% https://en.wikibooks.org/wiki/LaTeX/Mathematics
+\usepackage{amsmath,amsfonts,amssymb,mathtools}
+
+% Images
+% https://www.overleaf.com/learn/latex/Inserting_Images
+% https://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions
+\usepackage{graphicx,float}
+
+% Tables
+% https://www.overleaf.com/learn/latex/Tables
+% https://en.wikibooks.org/wiki/LaTeX/Tables
+
+% Algorithms
+% https://www.overleaf.com/learn/latex/algorithms
+% https://en.wikibooks.org/wiki/LaTeX/Algorithms
+\usepackage[ruled,vlined]{algorithm2e}
+\usepackage{algorithmic}
+
+% Code syntax highlighting
+% https://www.overleaf.com/learn/latex/Code_Highlighting_with_minted
+\usepackage{minted}
+\usemintedstyle{borland}
+
+% References
+% https://www.overleaf.com/learn/latex/Bibliography_management_in_LaTeX
+% https://en.wikibooks.org/wiki/LaTeX/Bibliography_Management
+\usepackage{biblatex}
+\addbibresource{references.bib}
+\usepackage[euler]{textgreek}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{siunitx}
+\renewcommand \thesubsubsection {\Alph{subsubsection}}
+\renewcommand{\thesubsubsection}{\alph{subsubsection})}
+\makeatletter
+\renewcommand{\p@subsubsection}{\thesubsection.\protect\eatbracket}
+
+
+% Title content
+\title{EE 462 Homework 1}
+\author{Burak Kemal Kara}
+\date{March 21, 2020}
+
+\begin{document}
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+            
+        \Huge
+        \textbf{DC/DC Voltage REGULATOR}
+            
+        \vspace{0.5cm}
+        \LARGE
+        Complete Simulation Report
+            
+        \vspace{1.5cm}
+            
+        \textbf{Cemil Öztürk}\\
+        \textbf{Burak Kemal Kara}
+            
+        \vfill
+            
+        A report presented for the sake of\\
+        Humanity and Science
+            
+        \vspace{0.8cm}
+            
+        \includegraphics[width=0.4\textwidth]{logo.png}
+            
+        \Large
+        Electrical \& Electronics Engineering\\
+        MIDDLE EAST TECHNICAL UNIVERSITY\\
+        TURKEY\\
+        23.03.2020
+            
+    \end{center}
+\end{titlepage}
+%Table of contents
+\tableofcontents
+\newpage
+%Introduction
+\section{Introduction}
+\section{Forward Converter topology}
+\section{Design Equations}
+\subsection{Transformer Considerations}
+\subsection{MOSFET Considerations}
+\subsection{Output Inductor Considerations}
+\subsection{Capacitor Considerations}
+\subsection{Diode Considerations}
+\section{References}
+
+\end{document}
