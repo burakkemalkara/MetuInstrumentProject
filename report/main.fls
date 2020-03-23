@@ -251,6 +251,12 @@ INPUT main.toc
 INPUT main.toc
 INPUT C:\Users\burak\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx10.tfm
 OUTPUT main.toc
+INPUT projects.jpeg
+INPUT .\projects.jpeg
+INPUT .\projects.jpeg
+INPUT .\projects.jpeg
+INPUT .\projects.jpeg
+INPUT C:\Users\burak\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\tcrm1000.tfm
 INPUT C:\Users\burak\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\burak\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
 INPUT number.jpg
@@ -258,12 +264,29 @@ INPUT .\number.jpg
 INPUT .\number.jpg
 INPUT .\number.jpg
 INPUT .\number.jpg
+INPUT diodes.jpg
+INPUT .\diodes.jpg
+INPUT .\diodes.jpg
+INPUT .\diodes.jpg
+INPUT .\diodes.jpg
+INPUT diode_loss.jpeg
+INPUT .\diode_loss.jpeg
+INPUT .\diode_loss.jpeg
+INPUT .\diode_loss.jpeg
+INPUT .\diode_loss.jpeg
+INPUT ic.jpeg
+INPUT .\ic.jpeg
+INPUT .\ic.jpeg
+INPUT .\ic.jpeg
+INPUT .\ic.jpeg
 INPUT C:\Users\burak\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmti10.tfm
 INPUT main.aux
 INPUT .\main.out
 INPUT .\main.out
 INPUT main.run.xml
 OUTPUT main.run.xml
+INPUT C:\Users\burak\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
+INPUT C:\Users\burak\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
 INPUT C:\Users\burak\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Users\burak\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Users\burak\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
@@ -284,6 +307,8 @@ INPUT C:\Users\burak\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfon
 INPUT C:\Users\burak\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr7.pfb
 INPUT C:\Users\burak\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\burak\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\burak\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy7.pfb
+INPUT C:\Users\burak\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy7.pfb
 INPUT C:\Users\burak\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti10.pfb
 INPUT C:\Users\burak\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti10.pfb
 INPUT C:\Users\burak\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmtt10.pfb

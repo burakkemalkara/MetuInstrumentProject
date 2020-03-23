@@ -98,8 +98,25 @@
 Switch mode power supplies are commonly used to DC/DC converter applications. 
 Beside of voltage control, it provides galvanic isolations. 
 In this project we used Forward Converter topology which is good choice when output need high current and power range is below 200W. 
-This document aims to discuss component selections according to teoric and computational simulation results.
+In addition, UC3844 IC is examined and simulated in order to obtain constant output voltage with current control.
+This document aims to discuss component selections,cost and power estimation according to teoric and computational simulation results.
 \section{Forward Converter topology}
+In this project, we had different design options as can be seen from Figure ~\ref{fig:projects}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{projects.jpeg}
+    \caption {Different Design alternatives of the project}
+    \label{fig:projects}
+\end{figure}
+
+From these alternatives, Forward \#1 option is selected. Although, Forward Converter has more components and it is more complex than Flyback Converter, it has some important advantages over Flyback converter such as:
+\begin{itemize}
+    \item It has more efficiency because of better utilization of transformer.
+    \item A gapless core can be used because there are inductor at the output and there is no need high reluctance for transformer.
+    \item Output inductor and diode ensure continuous output current and because of that forward converter has less output voltage ripple.
+\end{itemize}
+
+
 \section{Design Equations}
 The following specifications are design equtions for Forward Converter Design.
 \begin{table}[H]
@@ -113,6 +130,7 @@ The following specifications are design equtions for Forward Converter Design.
     Output Volt. Peak-to-Peak Ripple (\%) & 2       \\ \hline
     Switching Frequency (fs)              & 100 kHz \\ \hline
 \end{tabular}
+\caption {Design specifications}
 \end{table}
 %Transformer
 \subsection{Transformer Considerations}
@@ -154,6 +172,7 @@ Since this currents ratings are for ideal case, it is safer to choose higher rat
     AWG\#16                   & 1.31                                                                                      & 3.7                                                                                  \\ \hline
     AWG\#18                   & 0.823                                                                                     & 2.3                                                                                  \\ \hline
     \end{tabular}
+    \caption{Wire properties}
 \end{table}
 Core window area is calculated from datasheet.Also geometry parameters are taken from datasheet \cite{core}.
 \begin{equation}
@@ -213,8 +232,57 @@ We selected to use IRF 740 N \cite{mosfet}, its voltage is 400V but since it has
 \end{equation}
 Conduction power loss is higher than expect, We can change this mosfet with better one at future. We will use this mosfet since we already have this component at the laboratory.
 \subsection{Output Inductor Considerations}
+We considered ripple voltage limit in our simulations and we chose 470 µH inductor according to our simulations. In addition, previous 10 A current rating selection must be valid for inductor. Therefore, we picked an inductor with 10 A maximum DC current and 470 µH inductance which is “CG3885-ALB” inductor from Coilcraft. It has also 8 mΩ maximum DC resistance and we used that value in our simulations.
+Since inductors has nonideal series resistance values, there are power losses of these resistance values also. CG3885-ALB inductor has 8 mΩ resistance and it has 3.2 A current. Therefore, power losses on inductor can be calculated as follows:
+\begin{equation}
+    P_{inductor}=I^2\cdot R=3.2^2\cdot 8\cdot 10^-3=0.08W
+\end{equation}
+
 \subsection{Capacitor Considerations}
+Because of ripple voltage limit, we chose 100 µF capacitor. In addition, we select voltage rating of capacitor as 50 V because of safety limit and possibility of voltage oscillation in case of soft start does not working. Therefore, we picked “860080675012” capacitor from Würth Elektronik.
 \subsection{Diode Considerations}
+As can be seen from Figures ~\ref{fig:soft}, there are 100 Volts when diodes are OFF and there are 3.2 A current when they are ON. Therefore, because of safety margin and high current possibility at the starting we chose 200 V and 10 A ratings for diodes. Hence, we picked “DPG10I200PM” fast recovery diodes. For diodes another important parameter is reverse recovery time and this diode has 35 ns which is enough for 100 kHz frequency applications.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{diodes.jpg}
+    \caption {Diodes}
+    \label{fig:diodes}
+\end{figure}
+Output diodes has 0.98 V voltage drop and at steady state their current will be 3,2 A. When one diode is ON the other diode is OFF at the output. Therefore, we can calculate conduction losses by simply multiply voltage drop and forward current.
+\begin{equation}
+    P_{conduction}=V_fI_f=0.98V\cdot 32A=3.13 W
+\end{equation}
+For calculating switching losses of diodes, reverse recovery charge, blocking voltage and switching frequency is needed. From Figure ~\ref{fig:diode_loss}, we can estimate our reverse recovery charge as 0.1 µC. Blocking voltage is 100 V from simulations and switching frequency is 100 kHz.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{diode_loss.jpeg}
+    \caption {Reverse recovery charge values of DPG10I200PM}
+    \label{fig:diode_loss}
+\end{figure}
+From these values, switching losses of two diodes can be calculated as follows:
+\begin{equation}
+    P_{switching}=Q_RV_Rf_s=2\cdot 0.1\cdot 10^-6\cdot 100V\cdot 100kHz=2W
+\end{equation}
+\section{Aimed Bonuses}
+\subsection{Analog Controller IC}
+We are planning to use UC3844 High Performance Current Mode Controller. It also has soft start option if proper external circuitry is designed.
+In Simulink, we established current mode control by using inner circuitry of this IC by oscillator and error amplifier and it worked as we want.
+\subsection{Efficiency Bonus}
+As simulated at matlab efficiency is \%85.We try to select components to decrease loss and increase efficiency.
+\subsection{Current Mode Control}
+Current control Mode control decrease oscillations and output reach steady state faster.
+\subsection{PCB}
+We are planning to implement our final circuitry on Printed Circuit Board (PCB). Because PCB has some advantages over stripboard. It is more professional than stripboard and it is less noisy. Also, after drawing proper PCB layout it is easy to implement.
+\subsection{Soft Starting}
+Soft starting is important issue for such applications because at the very beginning of implementation circuit has tendency to draw much more current than steady state. Reason of this problem is energy storage devices in the circuit. Until capacitors and inductor reaches steady state, they draw more current and that is why soft starting is needed. Since it is not desired, most of the controller ICs have soft starting feature and UC3884 also has this feature. For using soft starting mode of our IC, simple circuitry that can be seen in Figure ~\ref{fig:soft} is enough.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{ic.jpeg}
+    \caption {Soft starting circuity of UC3884}
+    \label{fig:soft}
+\end{figure}
+\section{Cost Analys}
+
 \section{References}
 \printbibliography
 \end{document}
