@@ -101,21 +101,32 @@ In this project we used Forward Converter topology which is good choice when out
 In addition, UC3844 IC is examined and simulated in order to obtain constant output voltage with current control.
 This document aims to discuss component selections,cost and power estimation according to teoric and computational simulation results.
 \section{Forward Converter topology}
+Forward converter topology is derived from buck converter, at each cycle input transfer power to load side. To avoid saturation at core we choose to use reset windigs.Details are shown Figure ~\ref{fig:topology}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{topology.jpeg}
+    \caption {Diagram,schematic and basic waveforms for Forward converter with reset winding cited \cite{topology}}
+    \label{fig:topology}
+\end{figure}
 In this project, we had different design options as can be seen from Figure ~\ref{fig:projects}.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\linewidth]{projects.jpeg}
+    \includegraphics[width=1\linewidth]{projects.jpeg}
     \caption {Different Design alternatives of the project}
     \label{fig:projects}
 \end{figure}
 
 From these alternatives, Forward \#1 option is selected. Although, Forward Converter has more components and it is more complex than Flyback Converter, it has some important advantages over Flyback converter such as:
 \begin{itemize}
-    \item It has more efficiency because of better utilization of transformer.
-    \item A gapless core can be used because there are inductor at the output and there is no need high reluctance for transformer.
-    \item Output inductor and diode ensure continuous output current and because of that forward converter has less output voltage ripple.
+    \item It has better transformer utilization. It transfers its energy instantly across the transformer and it does not need energy storage element in transformer. For that reason, transformer can be more ideal with higher magnetizing inductance and no air gap
+    \item Output inductor and freewheeling diode ensure continuous output current and it causes less ripple at the output. Furthermore, since main energy storage element is inductor, output capacitor can be smaller than flyback.
+    \item It has less voltage and current stresses on switching components because of larger magnetizing inductance.
 \end{itemize}
-
+Disadvantages of Forward Converter compared to Flyback:
+\begin{itemize}
+    \item It is more expensive than flyback because of extra freewheeling diode and output inductor.
+    \item It has minimum load requirements because gain changes a lot in DCM operations
+\end{itemize}
 
 \section{Design Equations}
 The following specifications are design equtions for Forward Converter Design.
@@ -231,7 +242,17 @@ We selected to use IRF 740 N \cite{mosfet}, its voltage is 400V but since it has
     P_{switching}=\frac{1}{2}\cdot V_{in}I_{in}(t_r+t_f)f_s=0.12W
 \end{equation}
 Conduction power loss is higher than expect, We can change this mosfet with better one at future. We will use this mosfet since we already have this component at the laboratory.
+Lets use heatsink,Model No. :M-C092. Its Rca=3C/W. MOSFET Rth is 0.52.Assume enviroment temperature is 30C. Thus,
+\begin{equation}
+    T_j=C_{normal}+P_{total}\cdot (Rca_{heatsink}\cdot Rca_{mosfet})=40 Celcius.
+\end{equation}
 \subsection{Output Inductor Considerations}
+Since \%2 voltage ripple, current change is $I_{ripple}=0.02\cdot \frac{P_o}{V_o}=0.064 A$Assume we apply 48 V input, and capacitor is big enough to constat output,
+\begin{equation}
+    V_L=L\frac{di}{dt} \implies nV_i-V_o=L\frac{I_{ripple}}{DT_s}=130\mu H
+\end{equation}
+\[\therefore L>130\mu H\]
+
 We considered ripple voltage limit in our simulations and we chose 470 µH inductor according to our simulations. In addition, previous 10 A current rating selection must be valid for inductor. Therefore, we picked an inductor with 10 A maximum DC current and 470 µH inductance which is “CG3885-ALB” inductor from Coilcraft. It has also 8 mΩ maximum DC resistance and we used that value in our simulations.
 Since inductors has nonideal series resistance values, there are power losses of these resistance values also. CG3885-ALB inductor has 8 mΩ resistance and it has 3.2 A current. Therefore, power losses on inductor can be calculated as follows:
 \begin{equation}
@@ -239,9 +260,24 @@ Since inductors has nonideal series resistance values, there are power losses of
 \end{equation}
 
 \subsection{Capacitor Considerations}
-Because of ripple voltage limit, we chose 100 µF capacitor. In addition, we select voltage rating of capacitor as 50 V because of safety limit and possibility of voltage oscillation in case of soft start does not working. Therefore, we picked “860080675012” capacitor from Würth Elektronik.
+When $V_in=48 V$, D=0.156,
+\begin{equation}
+    \textDelta V=V_{ripple}=\frac{V_o}{50}=0.3V
+\end{equation}
+\begin{equation}
+    \textDelta Q=C\textDelta V
+\end{equation}
+\begin{equation}
+    I_oDT_s=CV_{ripple}
+\end{equation}
+\[\therefore C>16\mu F\]
+Because of ripple voltage limit, we chose 150 µF capacitor. In addition, we select voltage rating of capacitor as 50 V because of safety limit and possibility of voltage oscillation in case of soft start does not working. Therefore, we picked “860080675012” capacitor from Würth Elektronik \cite{capacitor}.From datasheet impedance at 100kHz is $0.068\Omega$.
+\begin{equation}
+    impedance=ESR+\frac{1}{jwC} \implies ESR=0.05 \Omega
+\end{equation}
+
 \subsection{Diode Considerations}
-As can be seen from Figures ~\ref{fig:soft}, there are 100 Volts when diodes are OFF and there are 3.2 A current when they are ON. Therefore, because of safety margin and high current possibility at the starting we chose 200 V and 10 A ratings for diodes. Hence, we picked “DPG10I200PM” fast recovery diodes. For diodes another important parameter is reverse recovery time and this diode has 35 ns which is enough for 100 kHz frequency applications.
+As can be seen from Figures ~\ref{fig:soft}, there are 100 Volts when diodes are OFF and there are 3.2 A current when they are ON. Therefore, because of safety margin and high current possibility at the starting we chose 200 V and 10 A ratings for diodes. Hence, we picked “DPG10I200PM” \cite{diode} fast recovery diodes. For diodes another important parameter is reverse recovery time and this diode has 35 ns which is enough for 100 kHz frequency applications.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\linewidth]{diodes.jpg}
@@ -265,12 +301,25 @@ From these values, switching losses of two diodes can be calculated as follows:
 \end{equation}
 \section{Aimed Bonuses}
 \subsection{Analog Controller IC}
-We are planning to use UC3844 High Performance Current Mode Controller. It also has soft start option if proper external circuitry is designed.
-In Simulink, we established current mode control by using inner circuitry of this IC by oscillator and error amplifier and it worked as we want.
+We are planning to use UC3844 \cite{uc3844} High Performance Current Mode Controller. It also has soft start option if proper external circuitry is designed.
+In Simulink, we established current mode control by using inner circuitry of this IC by oscillator and error amplifier and it worked as we want.This IC also allows us to ensure that our converter operates in line and load regulations limits because of feedback. In case of any change on the load or input, IC senses that change and regulates output voltage with very high accuracy.
 \subsection{Efficiency Bonus}
 As simulated at matlab efficiency is \%85.We try to select components to decrease loss and increase efficiency.
 \subsection{Current Mode Control}
 Current control Mode control decrease oscillations and output reach steady state faster.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{voltage_control.jpg}
+    \caption {Voltage Controlled mode Output Voltage}
+    \label{fig:voltage_control}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{current_control.jpg}
+    \caption {Current Controlled mode Output Voltage}
+    \label{fig:current_control}
+\end{figure}
+As seen Current control mode reach steady state faster than voltage control.
 \subsection{PCB}
 We are planning to implement our final circuitry on Printed Circuit Board (PCB). Because PCB has some advantages over stripboard. It is more professional than stripboard and it is less noisy. Also, after drawing proper PCB layout it is easy to implement.
 \subsection{Soft Starting}
@@ -281,8 +330,25 @@ Soft starting is important issue for such applications because at the very begin
     \caption {Soft starting circuity of UC3884}
     \label{fig:soft}
 \end{figure}
-\section{Cost Analys}
-
+\subsection{Isolation}
+Since we will implement isolated DC-DC converters, breaking that isolation brings negative points. However, we should use feedback from output to input in order to obtain voltage control feedback. For that reason, we are planning to use TLP250 optocoupler between output feedback and UC3844.
+\section{Cost Analysis}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|}
+    \hline
+    Component                                                        & Quantity & \begin{tabular}[c]{@{}c@{}}Cost\\ Euro\end{tabular} \\ \hline
+    DPG10I200PM                                                      & 3        & 3.75                                                \\ \hline
+    \begin{tabular}[c]{@{}c@{}}CG3885-ALB\\ Inductor\end{tabular}    & 1        & 5.87                                                \\ \hline
+    \begin{tabular}[c]{@{}c@{}}860080675012\\ Capacitor\end{tabular} & 1        & 0.4                                                 \\ \hline
+    IRF 740N                                                         & 1        & 1                                                   \\ \hline
+    0R45959EC Core                                                   & 1        & 5                                                   \\ \hline
+    Wire AWG                                                         & -        & 2                                                   \\ \hline
+    UC 3844                                                          & 1        & 1                                                   \\ \hline
+    Total Cost                                                       &          & 19                                                  \\ \hline
+    \end{tabular}
+    \caption{Cost Table}
+    \end{table}
 \section{References}
 \printbibliography
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.14)  23 MAR 2020 23:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.14)  24 MAR 2020 01:37
 entering extended mode
 **"c:/Users/burak/Desktop/EE 464/MetuInstrumentProject/report/main.tex"
 ("c:/Users/burak/Desktop/EE 464/MetuInstrumentProject/report/main.tex"
@@ -1185,7 +1185,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 59.
  ("C:\Users\burak\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<logo.png, id=67, 1204.5pt x 1017.8025pt>
+<logo.png, id=71, 1204.5pt x 1017.8025pt>
 File: logo.png Graphic file (type png)
 <use logo.png>
 Package pdftex.def Info: logo.png  used on input line 83.
@@ -1201,68 +1201,97 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
                    \relax 
 l.95 \newpage
               [1]
-<projects.jpeg, id=101, 793.96625pt x 728.7225pt>
+<topology.jpeg, id=106, 867.24pt x 458.71375pt>
+File: topology.jpeg Graphic file (type jpg)
+<use topology.jpeg>
+Package pdftex.def Info: topology.jpeg  used on input line 107.
+(pdftex.def)             Requested size: 375.80544pt x 198.77594pt.
+<projects.jpeg, id=109, 1091.277pt x 247.52475pt>
 File: projects.jpeg Graphic file (type jpg)
 <use projects.jpeg>
-Package pdftex.def Info: projects.jpeg  used on input line 107.
-(pdftex.def)             Requested size: 234.8775pt x 215.57172pt.
- [2 <./projects.jpeg>] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 189--192
+Package pdftex.def Info: projects.jpeg  used on input line 114.
+(pdftex.def)             Requested size: 469.75502pt x 106.55064pt.
+ [2 <./topology.jpeg> <./projects.jpeg>] [3]
+Underfull \hbox (badness 10000) in paragraph at lines 200--203
 
  []
 
-<number.jpg, id=127, 477.785pt x 389.455pt>
+<number.jpg, id=134, 477.785pt x 389.455pt>
 File: number.jpg Graphic file (type jpg)
 <use number.jpg>
-Package pdftex.def Info: number.jpg  used on input line 200.
+Package pdftex.def Info: number.jpg  used on input line 211.
 (pdftex.def)             Requested size: 234.8775pt x 191.45264pt.
-[4 <./number.jpg>]
-<diodes.jpg, id=142, 455.7025pt x 412.54124pt>
+[4] [5 <./number.jpg>]
+
+LaTeX Warning: Command \textDelta invalid in math mode on input line 265.
+
+LaTeX Font Info:    Trying to load font information for U+eur on input line 265.
+("C:\Users\burak\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\ueur.fd"
+File: ueur.fd 2013/01/14 v3.01 Euler Roman
+)
+
+LaTeX Warning: Command \textDelta invalid in math mode on input line 268.
+
+
+LaTeX Warning: Command \textDelta invalid in math mode on input line 268.
+
+<diodes.jpg, id=164, 455.7025pt x 412.54124pt>
 File: diodes.jpg Graphic file (type jpg)
 <use diodes.jpg>
-Package pdftex.def Info: diodes.jpg  used on input line 247.
+Package pdftex.def Info: diodes.jpg  used on input line 283.
 (pdftex.def)             Requested size: 234.8775pt x 212.63422pt.
- [5]
-<diode_loss.jpeg, id=156, 572.1375pt x 617.30624pt>
+[6]
+<diode_loss.jpeg, id=182, 572.1375pt x 617.30624pt>
 File: diode_loss.jpeg Graphic file (type jpg)
 <use diode_loss.jpeg>
-Package pdftex.def Info: diode_loss.jpeg  used on input line 258.
+Package pdftex.def Info: diode_loss.jpeg  used on input line 294.
 (pdftex.def)             Requested size: 234.8775pt x 253.41745pt.
- [6 <./diodes.jpg> <./diode_loss.jpeg>]
-<ic.jpeg, id=166, 779.91376pt x 591.20876pt>
+ [7 <./diodes.jpg> <./diode_loss.jpeg>]
+<voltage_control.jpg, id=191, 446.66875pt x 275.0275pt>
+File: voltage_control.jpg Graphic file (type jpg)
+<use voltage_control.jpg>
+Package pdftex.def Info: voltage_control.jpg  used on input line 312.
+(pdftex.def)             Requested size: 234.8775pt x 144.6224pt.
+<current_control.jpg, id=192, 446.66875pt x 275.0275pt>
+File: current_control.jpg Graphic file (type jpg)
+<use current_control.jpg>
+Package pdftex.def Info: current_control.jpg  used on input line 318.
+(pdftex.def)             Requested size: 234.8775pt x 144.6224pt.
+ [8 <./voltage_control.jpg> <./current_control.jpg>]
+<ic.jpeg, id=202, 779.91376pt x 591.20876pt>
 File: ic.jpeg Graphic file (type jpg)
 <use ic.jpeg>
-Package pdftex.def Info: ic.jpeg  used on input line 280.
+Package pdftex.def Info: ic.jpeg  used on input line 329.
 (pdftex.def)             Requested size: 234.8775pt x 178.04057pt.
- [7 <./ic.jpeg>]
-Overfull \hbox (0.93695pt too wide) in paragraph at lines 288--288
+ [9 <./ic.jpeg>]
+Overfull \hbox (0.93695pt too wide) in paragraph at lines 354--354
 [][]\OT1/cmr/m/it/10 0R45959EC R Ma-te-rial Core[]\OT1/cmr/m/n/10 . []$\OT1/cmtt/m/n/10 https : / / www . mag -[] inc . com / Media / Magnetics / Datasheets / 0R45959EC .
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 288.
-[8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 288.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 354.
+[10]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 354.
  (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 288.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 288.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 354.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 354.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 263A8578F617EFF333E124652836C265;988.
+(rerunfilecheck)             Checksum: 144DB95DE6DBD9317DEB5DC26C6EA3C4;1049.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22288 strings out of 481565
- 424313 string characters out of 2914159
- 1107819 words of memory out of 3000000
- 37162 multiletter control sequences out of 15000+200000
- 538857 words of font info for 49 fonts, out of 3000000 for 9000
+ 22348 strings out of 481565
+ 425539 string characters out of 2914159
+ 1107229 words of memory out of 3000000
+ 37198 multiletter control sequences out of 15000+200000
+ 539140 words of font info for 50 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,16n,45p,904b,1707s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\burak\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/burak/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/burak/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/burak/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/burak/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/burak/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/burak/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/burak/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/burak/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/burak/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/burak/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/burak/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/burak/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/burak/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/burak/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (9 pages, 512993 bytes).
+ 41i,16n,46p,904b,1317s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\burak\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/burak/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/burak/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/burak/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/burak/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/burak/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/burak/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/burak/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/burak/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/burak/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/burak/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/burak/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/burak/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/burak/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/burak/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/burak/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on main.pdf (11 pages, 621096 bytes).
 PDF statistics:
- 248 PDF objects out of 1000 (max. 8388607)
- 54 named destinations out of 1000 (max. 500000)
- 159 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 298 PDF objects out of 1000 (max. 8388607)
+ 71 named destinations out of 1000 (max. 500000)
+ 182 words of extra memory for PDF output out of 10000 (max. 10000000)
 

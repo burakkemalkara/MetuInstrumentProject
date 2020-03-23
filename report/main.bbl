@@ -19,6 +19,13 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{diode}{misc}{}
+      \field{sortinit}{h}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://ixapps.ixys.com/Datasheet/DPG10I200PM.pdf}}
+      \field{title}{\href{https://ixapps.ixys.com/Datasheet/DPG10I200PM.pdf}{DPG diode}}
+    \endentry
     \entry{mosfet}{misc}{}
       \field{sortinit}{h}
       \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
@@ -32,6 +39,27 @@
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://www.mag-inc.com/Media/Magnetics/Datasheets/0R45959EC.pdf}}
       \field{title}{\href{https://www.mag-inc.com/Media/Magnetics/Datasheets/0R45959EC.pdf}{0R45959EC R Material Core}}
+    \endentry
+    \entry{capacitor}{misc}{}
+      \field{sortinit}{h}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.mouser.com.tr/datasheet/2/445/860080675012-1726029.pdf}}
+      \field{title}{\href{https://www.mouser.com.tr/datasheet/2/445/860080675012-1726029.pdf}{Capacitor}}
+    \endentry
+    \entry{topology}{misc}{}
+      \field{sortinit}{h}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.mouser.com/pdfdocs/2-10.pdf}}
+      \field{title}{\href{https://www.mouser.com/pdfdocs/2-10.pdf}{Forward Converter Topology}}
+    \endentry
+    \entry{uc3844}{misc}{}
+      \field{sortinit}{h}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.onsemi.com/pub/Collateral/UC3844-D.PDF}}
+      \field{title}{\href{https://www.onsemi.com/pub/Collateral/UC3844-D.PDF}{UC3844 PWM controller}}
     \endentry
   \enddatalist
 \endrefsection

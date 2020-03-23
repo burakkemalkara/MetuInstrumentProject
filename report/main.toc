@@ -1,17 +1,18 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
 \contentsline {section}{\numberline {2}Forward Converter topology}{2}{section.2}%
-\contentsline {section}{\numberline {3}Design Equations}{2}{section.3}%
+\contentsline {section}{\numberline {3}Design Equations}{3}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Transformer Considerations}{3}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}MOSFET Considerations}{5}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Output Inductor Considerations}{5}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Capacitor Considerations}{5}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Diode Considerations}{5}{subsection.3.5}%
-\contentsline {section}{\numberline {4}Aimed Bonuses}{7}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Analog Controller IC}{7}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Efficiency Bonus}{7}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Current Mode Control}{7}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}PCB}{7}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Soft Starting}{7}{subsection.4.5}%
-\contentsline {section}{\numberline {5}Cost Analys}{8}{section.5}%
-\contentsline {section}{\numberline {6}References}{8}{section.6}%
+\contentsline {subsection}{\numberline {3.3}Output Inductor Considerations}{6}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Capacitor Considerations}{6}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Diode Considerations}{6}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Aimed Bonuses}{8}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Analog Controller IC}{8}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Efficiency Bonus}{8}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Current Mode Control}{8}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}PCB}{9}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Soft Starting}{9}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Isolation}{9}{subsection.4.6}%
+\contentsline {section}{\numberline {5}Cost Analysis}{10}{section.5}%
+\contentsline {section}{\numberline {6}References}{10}{section.6}%
