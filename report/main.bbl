@@ -19,6 +19,13 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{mosfet}{misc}{}
+      \field{sortinit}{h}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://pdf.direnc.net/upload/irf740a-datasheet.pdf}}
+      \field{title}{\href{https://pdf.direnc.net/upload/irf740a-datasheet.pdf}{IRF 740 N POWER MOSFET}}
+    \endentry
     \entry{core}{misc}{}
       \field{sortinit}{h}
       \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}

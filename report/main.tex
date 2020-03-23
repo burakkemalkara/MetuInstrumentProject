@@ -102,7 +102,7 @@ This document aims to discuss component selections according to teoric and compu
 \section{Forward Converter topology}
 \section{Design Equations}
 The following specifications are design equtions for Forward Converter Design.
-\begin{table}
+\begin{table}[H]
     \centering
 \begin{tabular}{|l|l|}
     \hline
@@ -146,7 +146,7 @@ For secondary winding,
     I_{secondary}=\frac{I_{primary}}{n}=1A
 \end{equation}
 Since this currents ratings are for ideal case, it is safer to choose higher rating wires.From AWG chart,for primary and reset windings can use AWG \#16, Secondary AWG \#18. Selection criteria is max current. Their properties are shown at table 2.
-\begin{table}
+\begin{table}[H]
     \centering
 \begin{tabular}{|l|l|l|}
     \hline
@@ -163,13 +163,13 @@ Since area of wires are known max turn can be calculate by,
 \begin{equation}
     N_{max}=\frac{k_{fill}\cdot A_w}{A_{pri}+n\cdot A_{sec}+A_{reset}}=71.73
 \end{equation}
-Increasıng turn is good because flux density decreasing and core loss decreasing according to Steinmetz equation, but increased turn also increase resistance of wire and copper loss increased.
+Note that fill factor is 0.3 for litz wire.Increasıng turn is good because flux density decreasing and core loss decreasing according to Steinmetz equation, but increased turn also increase resistance of wire and copper loss increased.
 Core loss equation,
 \begin{equation}
     P_{fe}=K_{fe}(B_{peak})^\beta A_cl_m
 \end{equation}
-$P_{fe} at 100kHz,100mT given 85mW/cm^3$\\
-$P_{fe} at 100kHz,100mT given 550mW/cm^3$\\
+$P_{fe}$ at 100kHz,100mT given $85mW/cm^3$\\
+$P_{fe}$ at 100kHz,200mT given $550mW/cm^3$\\By using these values steinmetz parameters calculated as,\\
 \[\therefore \beta =2.7 \quad ,K_{fe}=42\]
 Core loss is simply $I^2R_{ac}$ but wires new resistance should be calcualted by skin effect.Since skin depth decrease wire area new resistance calculated by,
 \begin{equation}
@@ -193,6 +193,25 @@ Since reset and secondary windings direction same they summed. Also from Steinme
     P_{fe}=0.1375 Watt \implies R_m=\frac{V^2}{P_{fe}}=16.7k\Omega
 \end{equation}
 \subsection{MOSFET Considerations}
+Since when switch is off, reset windig decharge core, beside of input voltage additional voltage seen on mosfet.
+\begin{equation}
+    V_s=V_i+\frac{n_1}{n_2}\cdot V_i=96 V
+\end{equation}
+For the worst case, selected $V_i=48V$. To be stay at the safe side lets make it 150V.
+We aims to work in \%90 efficiency.Since $P_o=48 W$, $P_i=54 W$.At the minimum voltage max current created.
+\begin{equation}
+    I_i=\frac{P_i}{V_i}=2.22 A
+\end{equation}
+To be safe side minimum current of mosfet should be 5 A.
+We selected to use IRF 740 N \cite{mosfet}, its voltage is 400V but since it has low resistance and it presents at available component list at the laboratory it is advantageous.
+\\According to datasheet turn on and turn off time is 45ns.This much smaller than switching $t_off$ and $t_off$.
+\begin{equation}
+    P_{cond}=I_{i}^2\cdot R_{on}=2.7 W
+\end{equation}
+\begin{equation}
+    P_{switching}=\frac{1}{2}\cdot V_{in}I_{in}(t_r+t_f)f_s=0.12W
+\end{equation}
+Conduction power loss is higher than expect, We can change this mosfet with better one at future. We will use this mosfet since we already have this component at the laboratory.
 \subsection{Output Inductor Considerations}
 \subsection{Capacitor Considerations}
 \subsection{Diode Considerations}
