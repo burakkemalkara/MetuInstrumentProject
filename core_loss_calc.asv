@@ -26,26 +26,18 @@ MLT=2*pi*33.175e-3;
 l_wire=N*MLT;
 p_wire=1.72559e-08;
 r_wire=(1.29032/2)*1e-3;
-r_wire2=(1.02362/2)*1e-3;
-area_wire1=pi*r_wire^2;
-area_wire2=pi*r_wire2^2;
+%area_wire=1.31e-6;
 skin_depth=sqrt((p_wire)/(pi*f*4*pi*1e-7));
-area_res1=pi*((r_wire^2)-((r_wire-skin_depth)^2));
-area_res2=pi*((r_wire2^2)-((r_wire2-skin_depth)^2));
+area_res=pi*((r_wire^2)-((r_wire-skin_depth)^2));
 %Rdc=(l_wire*p_wire)/area_wire;
-Rac1=(l_wire*p_wire)/area_res1;
-Rac2=(l_wire*p_wire)/area_res2;
-P_wire=2*Rac1.*Ii^2+2*Rac2*Io^2;
+Rac=(l_wire*p_wire)/area_res;
+P_wire=Rac.*Ii^2+2*Rac*Io^2;
 plot(Pfe)
 hold on
 plot(P_wire)
-hold on
-plot(Pfe+P_wire)
-legend('Core Loss','Wire Loss','Total Loss')
+legend('Core Loss','Wire Loss')
 xlabel('N')
 ylabel('Watt')
-
-grid on
 
 
 

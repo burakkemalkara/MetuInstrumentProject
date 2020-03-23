@@ -16,5 +16,17 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{core}{misc}{}
+      \field{sortinit}{h}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.mag-inc.com/Media/Magnetics/Datasheets/0R45959EC.pdf}}
+      \field{title}{\href{https://www.mag-inc.com/Media/Magnetics/Datasheets/0R45959EC.pdf}{0R45959EC R Material Core}}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

@@ -3,8 +3,8 @@
 \contentsline {section}{\numberline {2}Forward Converter topology}{2}{section.2}%
 \contentsline {section}{\numberline {3}Design Equations}{2}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Transformer Considerations}{2}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}MOSFET Considerations}{2}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Output Inductor Considerations}{2}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Capacitor Considerations}{2}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Diode Considerations}{2}{subsection.3.5}%
-\contentsline {section}{\numberline {4}References}{2}{section.4}%
+\contentsline {subsection}{\numberline {3.2}MOSFET Considerations}{4}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Output Inductor Considerations}{4}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Capacitor Considerations}{4}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Diode Considerations}{4}{subsection.3.5}%
+\contentsline {section}{\numberline {4}References}{4}{section.4}%
