@@ -244,7 +244,7 @@ We selected to use IRF 740 N \cite{mosfet}, its voltage is 400V but since it has
 Conduction power loss is higher than expect, We can change this mosfet with better one at future. We will use this mosfet since we already have this component at the laboratory.
 Lets use heatsink,Model No. :M-C092. Its Rca=3C/W. MOSFET Rth is 0.52.Assume enviroment temperature is 30C. Thus,
 \begin{equation}
-    T_j=C_{normal}+P_{total}\cdot (Rca_{heatsink}\cdot Rca_{mosfet})=40 Celcius.
+    T_j=C_{normal}+P_{total}\cdot (Rca_{heatsink}+ Rca_{mosfet})=49.2 Celcius.
 \end{equation}
 \subsection{Output Inductor Considerations}
 Since \%2 voltage ripple, current change is $I_{ripple}=0.02\cdot \frac{P_o}{V_o}=0.064 A$Assume we apply 48 V input, and capacitor is big enough to constat output,
@@ -344,8 +344,9 @@ Since we will implement isolated DC-DC converters, breaking that isolation bring
     IRF 740N                                                         & 1        & 1                                                   \\ \hline
     0R45959EC Core                                                   & 1        & 5                                                   \\ \hline
     Wire AWG                                                         & -        & 2                                                   \\ \hline
-    UC 3844                                                          & 1        & 1                                                   \\ \hline
-    Total Cost                                                       &          & 19                                                  \\ \hline
+    UC 3844                                                          & 1        & 1     \\ \hline
+    ATS-PCB1020                                                      & 1        & 4                                               \\ \hline
+    Total Cost                                                       &          & 23                                                  \\ \hline
     \end{tabular}
     \caption{Cost Table}
     \end{table}
