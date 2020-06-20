@@ -1,7 +1,7 @@
 %B calculation
 f=100000;
  Vin=48;
- N=3:1:70;
+ N=16:1:34;
  D=0.5;
  Ae=368e-6;
  B=(Vin*D)./(N*f*Ae)
@@ -22,7 +22,7 @@ Ii=2.5;
 
 %Wire Parameters
 
-MLT=2*pi*33.175e-3;
+MLT=2*pi*15.13*10^-3;
 l_wire=N*MLT;
 p_wire=1.72559e-08;
 r_wire=(1.29032/2)*1e-3;
