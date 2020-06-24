@@ -20,61 +20,68 @@ Gmin = 2.70769e-013
 Gmin = 0
 Gmin stepping succeeded in finding the operating point.
 
-Heightened Def Con from 2.87116e-005 to 2.87156e-005
-Heightened Def Con from 3.87138e-005 to 3.87178e-005
-Heightened Def Con from 5.35879e-005 to 5.35919e-005
-Heightened Def Con from 5.35923e-005 to 5.35963e-005
-Heightened Def Con from 5.35973e-005 to 5.36013e-005
-Heightened Def Con from 6.42699e-005 to 6.42711e-005
-Heightened Def Con from 6.42768e-005 to 6.42771e-005
-Heightened Def Con from 7.50287e-005 to 7.50299e-005
-Heightened Def Con from 8.57655e-005 to 8.57695e-005
-Heightened Def Con from 8.57696e-005 to 8.57701e-005
-Heightened Def Con from 8.57717e-005 to 8.57757e-005
-Heightened Def Con from 8.57779e-005 to 8.5779e-005
-Heightened Def Con from 8.87178e-005 to 8.87218e-005
-Heightened Def Con from 9.65515e-005 to 9.6552e-005
-Heightened Def Con from 0.000107253 to 0.000107254
-Heightened Def Con from 0.000107258 to 0.000107262
-Heightened Def Con from 0.000118117 to 0.000118118
-Heightened Def Con from 0.000128714 to 0.000128717
-Heightened Def Con from 0.000128879 to 0.000128883
-Heightened Def Con from 0.000128884 to 0.000128888
-Heightened Def Con from 0.000138699 to 0.0001387
-Heightened Def Con from 0.000168715 to 0.000168717
-Heightened Def Con from 0.000178669 to 0.000178669
-Heightened Def Con from 0.000188715 to 0.000188717
-Heightened Def Con from 0.000198709 to 0.000198711
-Heightened Def Con from 0.000208715 to 0.000208718
-Heightened Def Con from 0.000218707 to 0.00021871
-Heightened Def Con from 0.000228712 to 0.000228715
-Heightened Def Con from 0.000238711 to 0.000238714
-Heightened Def Con from 0.000308706 to 0.000308708
-Heightened Def Con from 0.000348698 to 0.0003487
-Heightened Def Con from 0.000418716 to 0.000418719
-Heightened Def Con from 0.0005087 to 0.000508703
-Heightened Def Con from 0.000548693 to 0.000548696
-Heightened Def Con from 0.000608707 to 0.00060871
-Heightened Def Con from 0.000718691 to 0.000718692
-Heightened Def Con from 0.000888652 to 0.000888652
-Heightened Def Con from 0.00106872 to 0.00106872
-Heightened Def Con from 0.00108871 to 0.00108871
-Heightened Def Con from 0.00118916 to 0.00118916
+Heightened Def Con from 8.71905e-006 to 8.72305e-006
+Heightened Def Con from 8.72312e-006 to 8.72712e-006
+Heightened Def Con from 2.87155e-005 to 2.87195e-005
+Heightened Def Con from 3.87149e-005 to 3.8717e-005
+Heightened Def Con from 5.36287e-005 to 5.36327e-005
+Heightened Def Con from 5.36327e-005 to 5.36367e-005
+Heightened Def Con from 5.38581e-005 to 5.38592e-005
+Heightened Def Con from 7.4972e-005 to 7.49742e-005
+Heightened Def Con from 7.49742e-005 to 7.49753e-005
+Heightened Def Con from 7.49765e-005 to 7.49805e-005
+Heightened Def Con from 7.49849e-005 to 7.49889e-005
+Heightened Def Con from 7.49923e-005 to 7.49944e-005
+Heightened Def Con from 7.49946e-005 to 7.49946e-005
+Heightened Def Con from 7.49979e-005 to 7.5e-005
+Heightened Def Con from 8.57963e-005 to 8.57968e-005
+Heightened Def Con from 8.8713e-005 to 8.8717e-005
+Heightened Def Con from 8.8717e-005 to 8.8721e-005
+Heightened Def Con from 8.87211e-005 to 8.87251e-005
+Heightened Def Con from 0.000107336 to 0.000107338
+Heightened Def Con from 0.000108711 to 0.000108715
+Heightened Def Con from 0.000108715 to 0.000108719
+Heightened Def Con from 0.000108719 to 0.000108723
+Heightened Def Con from 0.000108723 to 0.000108727
+Heightened Def Con from 0.000108729 to 0.00010873
+Heightened Def Con from 0.000118066 to 0.000118066
+Heightened Def Con from 0.000118068 to 0.000118072
+Heightened Def Con from 0.000128707 to 0.000128709
+Heightened Def Con from 0.000128915 to 0.000128916
+Heightened Def Con from 0.000168701 to 0.000168702
+Heightened Def Con from 0.000188711 to 0.000188713
+Heightened Def Con from 0.00019871 to 0.00019871
+Heightened Def Con from 0.000248715 to 0.000248718
+Heightened Def Con from 0.000268707 to 0.000268707
+Heightened Def Con from 0.000318721 to 0.000318722
+Heightened Def Con from 0.000328708 to 0.000328709
+Heightened Def Con from 0.000328719 to 0.000328719
+Heightened Def Con from 0.000358701 to 0.000358704
+Heightened Def Con from 0.000358711 to 0.000358714
+Heightened Def Con from 0.000408708 to 0.000408711
+Heightened Def Con from 0.000408717 to 0.000408718
+Heightened Def Con from 0.00041872 to 0.000418723
+Heightened Def Con from 0.000508704 to 0.000508704
+Heightened Def Con from 0.000518701 to 0.000518701
+Heightened Def Con from 0.000628711 to 0.000628714
+Heightened Def Con from 0.000758703 to 0.000758705
+Heightened Def Con from 0.00102871 to 0.00102871
+Heightened Def Con from 0.00126871 to 0.00126871
 
-Date: Wed Jun 24 11:25:43 2020
-Total elapsed time: 1.735 seconds.
+Date: Wed Jun 24 14:47:14 2020
+Total elapsed time: 2.611 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 242078
-traniter = 241569
-tranpoints = 52932
-accept = 38007
-rejected = 14965
+totiter = 323536
+traniter = 323027
+tranpoints = 72798
+accept = 51925
+rejected = 20920
 matrix size = 36
 fillins = 49
 solver = Normal
-Matrix Compiler1: 4.07 KB object code size  0.8/0.5/[0.3]
-Matrix Compiler2: off  [0.4]/0.5/0.6
+Matrix Compiler1: 4.07 KB object code size  1.1/0.8/[0.3]
+Matrix Compiler2:     285 opcodes  0.5/[0.5]/0.5
 

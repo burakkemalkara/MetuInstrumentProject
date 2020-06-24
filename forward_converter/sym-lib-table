@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name forward_converter-rescue)(type Legacy)(uri ${KIPRJMOD}/forward_converter-rescue.lib)(options "")(descr ""))
+  (lib (name forward_converter_opto-rescue)(type Legacy)(uri ${KIPRJMOD}/forward_converter_opto-rescue.lib)(options "")(descr ""))
 )
