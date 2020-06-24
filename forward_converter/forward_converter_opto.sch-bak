@@ -167,18 +167,16 @@ Wire Wire Line
 	3950 1600 3950 1900
 Wire Wire Line
 	4150 1600 3950 1600
-Wire Wire Line
-	3950 1600 3350 1600
 Connection ~ 3950 1600
 $Comp
 L power:VCC #PWR05
 U 1 1 5EF230A5
-P 3250 1600
-F 0 "#PWR05" H 3250 1450 50  0001 C CNN
-F 1 "VCC" H 3267 1773 50  0000 C CNN
-F 2 "" H 3250 1600 50  0001 C CNN
-F 3 "" H 3250 1600 50  0001 C CNN
-	1    3250 1600
+P 2900 1400
+F 0 "#PWR05" H 2900 1250 50  0001 C CNN
+F 1 "VCC" H 2917 1573 50  0000 C CNN
+F 2 "" H 2900 1400 50  0001 C CNN
+F 3 "" H 2900 1400 50  0001 C CNN
+	1    2900 1400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -255,17 +253,6 @@ $EndComp
 Wire Wire Line
 	7400 1400 7200 1400
 $Comp
-L Device:R R6
-U 1 1 5EF3AE1E
-P 7800 1550
-F 0 "R6" H 7870 1596 50  0000 L CNN
-F 1 "4.68" H 7870 1505 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7730 1550 50  0001 C CNN
-F 3 "~" H 7800 1550 50  0001 C CNN
-	1    7800 1550
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R7
 U 1 1 5EF3B2F4
 P 8200 1550
@@ -276,17 +263,10 @@ F 3 "~" H 8200 1550 50  0001 C CNN
 	1    8200 1550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7400 1400 7800 1400
 Connection ~ 7400 1400
-Connection ~ 7800 1400
-Wire Wire Line
-	7800 1800 7800 1700
 Wire Wire Line
 	7400 1700 7400 1800
 Connection ~ 7400 1800
-Wire Wire Line
-	7400 1800 7800 1800
 Wire Wire Line
 	6650 1700 6650 1800
 $Comp
@@ -348,8 +328,6 @@ F 3 "~" H 1500 2250 50  0001 C CNN
 	1    1500 2250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7800 1400 8200 1400
 $Comp
 L Device:R R8
 U 1 1 5EF3B6FB
@@ -452,17 +430,14 @@ Wire Wire Line
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5EFD298C
-P 3350 1600
-F 0 "#FLG0101" H 3350 1675 50  0001 C CNN
-F 1 "PWR_FLAG" H 3350 1773 50  0000 C CNN
-F 2 "" H 3350 1600 50  0001 C CNN
-F 3 "~" H 3350 1600 50  0001 C CNN
-	1    3350 1600
+P 3000 1400
+F 0 "#FLG0101" H 3000 1475 50  0001 C CNN
+F 1 "PWR_FLAG" H 3000 1573 50  0000 C CNN
+F 2 "" H 3000 1400 50  0001 C CNN
+F 3 "~" H 3000 1400 50  0001 C CNN
+	1    3000 1400
 	1    0    0    -1  
 $EndComp
-Connection ~ 3350 1600
-Wire Wire Line
-	3350 1600 3250 1600
 $Comp
 L forward_converter_lib:LT3758 U1
 U 1 1 5EFDF06D
@@ -474,20 +449,6 @@ F 3 "" H 3350 1800 50  0001 C CNN
 	1    3350 2150
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:PWR_FLAG #FLG0102
-U 1 1 5EFE002F
-P 1700 2600
-F 0 "#FLG0102" H 1700 2675 50  0001 C CNN
-F 1 "PWR_FLAG" H 1700 2773 50  0000 C CNN
-F 2 "" H 1700 2600 50  0001 C CNN
-F 3 "~" H 1700 2600 50  0001 C CNN
-	1    1700 2600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1700 2600 1900 2600
-Connection ~ 1900 2600
 Wire Wire Line
 	6150 1400 6050 1400
 Wire Wire Line
@@ -501,4 +462,104 @@ Wire Wire Line
 Connection ~ 2850 1900
 Wire Wire Line
 	2850 1900 2950 1900
+Wire Wire Line
+	3250 1600 3950 1600
+$Comp
+L Connector:Conn_Coaxial J1
+U 1 1 5EF4ACA9
+P 3250 1400
+F 0 "J1" H 3350 1375 50  0000 L CNN
+F 1 "Conn_Coaxial" H 3350 1284 50  0000 L CNN
+F 2 "Connector_Coaxial:BNC_PanelMountable_Vertical" H 3250 1400 50  0001 C CNN
+F 3 " ~" H 3250 1400 50  0001 C CNN
+	1    3250 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 1400 3000 1400
+Connection ~ 3000 1400
+Wire Wire Line
+	3000 1400 3050 1400
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5EFE002F
+P 4300 3250
+F 0 "#FLG0102" H 4300 3325 50  0001 C CNN
+F 1 "PWR_FLAG" H 4300 3423 50  0000 C CNN
+F 2 "" H 4300 3250 50  0001 C CNN
+F 3 "~" H 4300 3250 50  0001 C CNN
+	1    4300 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J2
+U 1 1 5EF4EB6C
+P 4850 3250
+F 0 "J2" H 4950 3225 50  0000 L CNN
+F 1 "Conn_Coaxial" H 4950 3134 50  0000 L CNN
+F 2 "Connector_Coaxial:BNC_PanelMountable_Vertical" H 4850 3250 50  0001 C CNN
+F 3 " ~" H 4850 3250 50  0001 C CNN
+	1    4850 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3450 5250 3450
+Wire Wire Line
+	5250 3450 5250 3350
+Wire Wire Line
+	5250 3350 5450 3350
+Connection ~ 5450 3350
+$Comp
+L Connector:Conn_Coaxial J3
+U 1 1 5EF5A29D
+P 7850 1200
+F 0 "J3" H 7950 1175 50  0000 L CNN
+F 1 "Conn_Coaxial" H 7950 1084 50  0000 L CNN
+F 2 "Connector_Coaxial:BNC_PanelMountable_Vertical" H 7850 1200 50  0001 C CNN
+F 3 " ~" H 7850 1200 50  0001 C CNN
+	1    7850 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 1400 7850 1400
+Wire Wire Line
+	7850 1400 8200 1400
+Connection ~ 7850 1400
+$Comp
+L Connector:Conn_Coaxial J4
+U 1 1 5EF5B0F6
+P 7950 1600
+F 0 "J4" H 8050 1575 50  0000 L CNN
+F 1 "Conn_Coaxial" H 8050 1484 50  0000 L CNN
+F 2 "Connector_Coaxial:BNC_PanelMountable_Vertical" H 7950 1600 50  0001 C CNN
+F 3 " ~" H 7950 1600 50  0001 C CNN
+	1    7950 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5EF5C0C7
+P 7650 1200
+F 0 "#FLG01" H 7650 1275 50  0001 C CNN
+F 1 "PWR_FLAG" H 7650 1373 50  0000 C CNN
+F 2 "" H 7650 1200 50  0001 C CNN
+F 3 "~" H 7650 1200 50  0001 C CNN
+	1    7650 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 1800 7950 1800
+Wire Wire Line
+	4300 3250 4650 3250
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5EF5E2EC
+P 7750 1600
+F 0 "#FLG02" H 7750 1675 50  0001 C CNN
+F 1 "PWR_FLAG" H 7750 1773 50  0000 C CNN
+F 2 "" H 7750 1600 50  0001 C CNN
+F 3 "~" H 7750 1600 50  0001 C CNN
+	1    7750 1600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
