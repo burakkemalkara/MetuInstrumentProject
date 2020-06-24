@@ -1,0 +1,45 @@
+* C:\Users\burak\Desktop\EE 464\MetuInstrumentProject\LTspice\Thermal Circuit.asc
+V1 N001 0 30
+L1 N006 N001 300µ Rser=0.05
+L2 0 N002 1875µ Rser=0.06
+M§Q1 P001 P002 P003 P003 BSC320N20NS3
+D1 N002 N003 D
+D2 0 N003 D
+L3 N004 N003 470µ Rser=11.5m
+R1 N004 0 4.68
+C1 N004 0 100µ Rser=0.05
+D3 N005 N001 D
+L4 N005 0 300µ Rser=0.05
+XU1 N010 N011 N014 N009 N011 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+V2 N014 0 15
+V3 N009 0 -15
+XU2 N018 N007 N017 0 N008 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+V4 N018 0 3
+V5 N017 0 1
+R2 N013 N007 10.77k
+C2 N008 N013 2n
+C3 N008 N007 0.26n
+R3 N007 N011 1k
+R4 N016 N011 130
+C4 N007 N016 22n
+XU3 N008 N019 N020 0 N012 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+V6 N020 0 15
+V7 N019 0 PULSE(0 3 0 5u 5u 0 10u)
+R5 N007 0 1.5k
+R6 N004 N010 900k
+R7 N010 0 450k
+XU4 N006 N012 N015 P001 P002 P003 Tjunction Tcase BSC600N25NS3 Tambient=30
+R8 N015 0 0.01
+XU5 Tcase NC_01 NC_02 aluminum Rtheta=4.6 Tambient=30 Area_Contact_mm2=100 Volume_mm3=1000
+.model D D
+.lib C:\Users\burak\Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\burak\Documents\LTspiceXVII\lib\cmp\standard.mos
+K1 L1 L2 L4 1
+.tran 0.1
+.lib SOAtherm-HeatSink.lib
+.lib SOAtherm-NMOS.lib
+.lib UniversalOpamps2.sub
+.backanno
+.end

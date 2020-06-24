@@ -67,21 +67,30 @@ Heightened Def Con from 0.000628711 to 0.000628714
 Heightened Def Con from 0.000758703 to 0.000758705
 Heightened Def Con from 0.00102871 to 0.00102871
 Heightened Def Con from 0.00126871 to 0.00126871
+Heightened Def Con from 0.00195871 to 0.00195871
+Heightened Def Con from 0.00209871 to 0.00209871
+Heightened Def Con from 0.00216871 to 0.00216872
+Heightened Def Con from 0.00223872 to 0.00223872
+Heightened Def Con from 0.00228869 to 0.0022887
+Heightened Def Con from 0.00233871 to 0.00233871
+Heightened Def Con from 0.00386912 to 0.00386912
+Heightened Def Con from 0.0038791 to 0.0038791
+Heightened Def Con from 0.0122946 to 0.0122946
 
-Date: Wed Jun 24 14:47:14 2020
-Total elapsed time: 2.611 seconds.
+Date: Wed Jun 24 20:07:09 2020
+Total elapsed time: 11.028 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 323536
-traniter = 323027
-tranpoints = 72798
-accept = 51925
-rejected = 20920
+totiter = 1792351
+traniter = 1791842
+tranpoints = 429157
+accept = 302378
+rejected = 126835
 matrix size = 36
 fillins = 49
 solver = Normal
-Matrix Compiler1: 4.07 KB object code size  1.1/0.8/[0.3]
-Matrix Compiler2:     285 opcodes  0.5/[0.5]/0.5
+Matrix Compiler1: 4.07 KB object code size  0.8/0.5/[0.3]
+Matrix Compiler2: off  [0.4]/0.6/0.5
 
