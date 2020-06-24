@@ -463,7 +463,7 @@ Connection ~ 2850 1900
 Wire Wire Line
 	2850 1900 2950 1900
 Wire Wire Line
-	3250 1600 3950 1600
+	3250 1600 3750 1600
 $Comp
 L Connector:Conn_Coaxial J1
 U 1 1 5EF4ACA9
@@ -503,7 +503,7 @@ F 3 " ~" H 4850 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4850 3450 5250 3450
+	4850 3450 4900 3450
 Wire Wire Line
 	5250 3450 5250 3350
 Wire Wire Line
@@ -560,6 +560,51 @@ F 1 "PWR_FLAG" H 7750 1773 50  0000 C CNN
 F 2 "" H 7750 1600 50  0001 C CNN
 F 3 "~" H 7750 1600 50  0001 C CNN
 	1    7750 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5EF65B68
+P 3750 1450
+F 0 "#FLG0103" H 3750 1525 50  0001 C CNN
+F 1 "PWR_FLAG" H 3750 1623 50  0000 C CNN
+F 2 "" H 3750 1450 50  0001 C CNN
+F 3 "~" H 3750 1450 50  0001 C CNN
+	1    3750 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 1450 3750 1600
+Connection ~ 3750 1600
+Wire Wire Line
+	3750 1600 3950 1600
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 5EF67206
+P 5050 3700
+F 0 "#FLG0104" H 5050 3775 50  0001 C CNN
+F 1 "PWR_FLAG" H 5050 3873 50  0000 C CNN
+F 2 "" H 5050 3700 50  0001 C CNN
+F 3 "~" H 5050 3700 50  0001 C CNN
+	1    5050 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3700 4900 3700
+Wire Wire Line
+	4900 3700 4900 3450
+Connection ~ 4900 3450
+Wire Wire Line
+	4900 3450 5250 3450
+$Comp
+L Mechanical:Heatsink HS1
+U 1 1 5EF3D2AB
+P 6300 2600
+F 0 "HS1" H 6442 2721 50  0000 L CNN
+F 1 "Heatsink" H 6442 2630 50  0000 L CNN
+F 2 "Heatsink:Heatsink_SheetType_50x7mm_2Fixations" H 6312 2600 50  0001 C CNN
+F 3 "~" H 6312 2600 50  0001 C CNN
+	1    6300 2600
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
