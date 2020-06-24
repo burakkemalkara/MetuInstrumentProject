@@ -1,0 +1,80 @@
+Circuit: * C:\Users\burak\Desktop\EE 464\MetuInstrumentProject\LTspice\Forward Converter Compensated.asc
+
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+Gmin = 1.5325e-005
+Gmin = 1.6455e-006
+Gmin = 1.76685e-007
+Gmin = 1.89714e-008
+Gmin = 2.03704e-009
+Gmin = 2.18725e-010
+Gmin = 2.34854e-011
+Gmin = 2.52173e-012
+Gmin = 2.70769e-013
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+Heightened Def Con from 2.87116e-005 to 2.87156e-005
+Heightened Def Con from 3.87138e-005 to 3.87178e-005
+Heightened Def Con from 5.35879e-005 to 5.35919e-005
+Heightened Def Con from 5.35923e-005 to 5.35963e-005
+Heightened Def Con from 5.35973e-005 to 5.36013e-005
+Heightened Def Con from 6.42699e-005 to 6.42711e-005
+Heightened Def Con from 6.42768e-005 to 6.42771e-005
+Heightened Def Con from 7.50287e-005 to 7.50299e-005
+Heightened Def Con from 8.57655e-005 to 8.57695e-005
+Heightened Def Con from 8.57696e-005 to 8.57701e-005
+Heightened Def Con from 8.57717e-005 to 8.57757e-005
+Heightened Def Con from 8.57779e-005 to 8.5779e-005
+Heightened Def Con from 8.87178e-005 to 8.87218e-005
+Heightened Def Con from 9.65515e-005 to 9.6552e-005
+Heightened Def Con from 0.000107253 to 0.000107254
+Heightened Def Con from 0.000107258 to 0.000107262
+Heightened Def Con from 0.000118117 to 0.000118118
+Heightened Def Con from 0.000128714 to 0.000128717
+Heightened Def Con from 0.000128879 to 0.000128883
+Heightened Def Con from 0.000128884 to 0.000128888
+Heightened Def Con from 0.000138699 to 0.0001387
+Heightened Def Con from 0.000168715 to 0.000168717
+Heightened Def Con from 0.000178669 to 0.000178669
+Heightened Def Con from 0.000188715 to 0.000188717
+Heightened Def Con from 0.000198709 to 0.000198711
+Heightened Def Con from 0.000208715 to 0.000208718
+Heightened Def Con from 0.000218707 to 0.00021871
+Heightened Def Con from 0.000228712 to 0.000228715
+Heightened Def Con from 0.000238711 to 0.000238714
+Heightened Def Con from 0.000308706 to 0.000308708
+Heightened Def Con from 0.000348698 to 0.0003487
+Heightened Def Con from 0.000418716 to 0.000418719
+Heightened Def Con from 0.0005087 to 0.000508703
+Heightened Def Con from 0.000548693 to 0.000548696
+Heightened Def Con from 0.000608707 to 0.00060871
+Heightened Def Con from 0.000718691 to 0.000718692
+Heightened Def Con from 0.000888652 to 0.000888652
+Heightened Def Con from 0.00106872 to 0.00106872
+Heightened Def Con from 0.00108871 to 0.00108871
+Heightened Def Con from 0.00118916 to 0.00118916
+
+Date: Wed Jun 24 11:25:43 2020
+Total elapsed time: 1.735 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 242078
+traniter = 241569
+tranpoints = 52932
+accept = 38007
+rejected = 14965
+matrix size = 36
+fillins = 49
+solver = Normal
+Matrix Compiler1: 4.07 KB object code size  0.8/0.5/[0.3]
+Matrix Compiler2: off  [0.4]/0.5/0.6
+
